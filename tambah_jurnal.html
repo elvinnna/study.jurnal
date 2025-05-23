@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Tambah Jurnal</title>
+</head>
+<body>
+
+<div class="container">
+  <h1>Tambah Jurnal</h1>
+  <div class="navbar">
+    <a href="view_entries.php" class="btn">Lihat Jurnal</a>
+  </div>
+
+<button id="theme-toggle" class="btn-theme">🌙 Mode Gelap</button>
+
+  <div class="card">
+    <form action="tambah_jurnal.php" method="POST">
+      <div class="input-group">
+        <label for="tanggal">Tanggal:</label>
+        <input type="date" id="tanggal" name="tanggal" required>
+      </div>
+
+      <div class="input-group">
+        <label for="subjek">Judul:</label>
+        <input type="text" id="subjek" name="subjek" required placeholder="Masukkan judul jurnal">
+      </div>
+
+      <div class="input-group">
+        <label for="catatan">Konten:</label>
+        <textarea id="catatan" name="catatan" rows="6" required placeholder="Tuliskan isi jurnal"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Simpan Jurnal</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- Script Dark Mode -->
+<script src="theme.js"></script>
+
+</body>
+</html>
